@@ -13,5 +13,17 @@ test('creates an employee object', () => {
 test('access employee name', () => {
     const employee = new Employee('Rick', 1, 'rmartin1985@att.net');
 
-    expect(employee.getName()).toBe('Rick')
+    expect(employee.getName()).toBe('Rick');
+})
+
+test('access employee id', () => {
+    const employee = new Employee('Rick', 1, 'rmartin1985@att.net');
+
+    expect(employee.getId()).toBe(1);
+})
+
+test('access employee email', () => {
+    const employee = new Employee('Rick', 1, 'rmartin1985@att.net');
+
+    expect(employee.getEmail()).toBe('rmartin1985@att.net');
 })
